@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/dialog_title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/large_taxi" />
+
+        <TextView
+            android:id="@+id/dialog_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/dialog_title_image"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<!--     <TextView -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="1dip" -->
+<!--         android:layout_marginTop="5dip" -->
+<!--         android:background="#30395C" /> -->
+<!--     <TextView -->
+<!--         android:id="@+id/dialog_message_text" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginLeft="30dip" -->
+<!--         android:layout_marginTop="10dip" -->
+<!--         android:text="This is a custom dialog" -->
+<!--         android:textColor="#000000" /> -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/dialog_button_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/b"
+            android:layout_margin="5dp" />
+        <TextView 
+            android:id="@+id/button_call_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialog_button_call"
+            android:layout_alignBottom="@+id/dialog_button_call"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"
+            android:ems="1"
+            android:text=""/>
+        <Button
+            android:id="@+id/dialog_button_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c"
+            android:layout_toRightOf="@+id/button_call_text"
+            android:layout_margin="5dp"
+            android:text="" />
+        <TextView 
+            android:id="@+id/button_talk_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialog_button_talk"
+            android:layout_alignBottom="@+id/dialog_button_talk"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"
+            android:ems="1"
+            android:text=""/>
+        <Button
+            android:id="@+id/dialog_button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a"
+            android:layout_toRightOf="@+id/button_talk_text"
+            android:layout_margin="5dp"
+            android:text="" />
+        <TextView 
+            android:id="@+id/button_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialog_button_order"
+            android:layout_alignBottom="@+id/dialog_button_order"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"
+            android:ems="1"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</LinearLayout>

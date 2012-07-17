@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5E9DB"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+<!--     <Button -->
+<!--         android:id="@+id/notice_board" -->
+<!--         android:layout_width="200dp" -->
+<!--         android:layout_height="100dp" -->
+<!--         android:layout_weight="0.05" -->
+<!--         android:background="@drawable/notice_board" -->
+<!--         android:text="用户注册" /> -->
+
+    <RelativeLayout
+        android:id="@+id/login_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notice_board" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/user_register"
+            android:textColor="#588F27"
+            android:textStyle="bold"
+            android:textSize="@dimen/buttontext_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name_edit"
+            android:layout_toLeftOf="@+id/name_edit"
+            android:text="@string/user_name"
+            android:textColor="#384E66"
+            android:textSize="@dimen/buttontext_size" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title"
+            android:singleLine="true" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/pwd_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pwd_edit"
+            android:layout_toLeftOf="@+id/pwd_edit"
+            android:text="@string/user_pwd"
+            android:textColor="#384E66"
+            android:textSize="@dimen/buttontext_size" />
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_edit"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+        
+        <TextView
+            android:id="@+id/retype_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/retype_edit"
+            android:layout_toLeftOf="@+id/retype_edit"
+            android:text="@string/pwd_retype"
+            android:textColor="#384E66"
+            android:textSize="@dimen/buttontext_size" />
+
+        <EditText
+            android:id="@+id/retype_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pwd_edit"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/retype_edit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:text="@string/register"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttontext_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

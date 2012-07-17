@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_back" >
+        
+        <Button
+            android:id="@+id/button_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/functions"
+            android:text=""
+            android:background="@drawable/functions_xml" />
+        <Button
+            android:id="@+id/button_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button_position"
+            android:layout_toRightOf="@+id/button_function"
+            android:scaleType="fitXY"
+            android:background="@drawable/center_button_xml"
+            android:text="列表"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#30395C" />
+        <Button
+            android:id="@+id/button_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/current"
+            android:background="@drawable/current_xml" />
+
+
+    </RelativeLayout>
+    
+<!--     <TextView -->
+<!--         android:id="@+id/lat" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" /> -->
+<!--     <TextView -->
+<!--         android:id="@+id/lon" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" /> -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="0VV-Rr4-4aX9GADLf-W22txZ7ECuXMeXzLTOVLw"
+            android:clickable="true" />
+    </FrameLayout>
+
+</LinearLayout>

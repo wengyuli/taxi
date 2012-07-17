@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light" >
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/hujintao" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_photo"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/add_friend"
+            android:layout_toRightOf="@+id/user_photo"
+            android:background="@drawable/communicate_bar_bg"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="用户名"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/add_friend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_photo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/favourite"
+            android:text="" />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.01"
+        android:background="#D1D1D1" >
+
+        <LinearLayout
+            android:id="@+id/conversation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/communicate_bar_bg"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/write_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:hint="输入消息" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/write_content"
+            android:background="@drawable/enter"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/write_content"
+            android:background="@drawable/recorder"
+            android:text=" " />
+
+    </RelativeLayout>
+
+</LinearLayout>

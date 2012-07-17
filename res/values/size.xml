@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="grid_font_size">14sp</dimen>
+    <dimen name="textview_size">16.5sp</dimen>
+    <dimen name="buttontext_size">20sp</dimen>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D1D1D1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_block" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name_edit"
+            android:layout_toLeftOf="@+id/name_edit"
+            android:text="@string/user_name"
+            android:textColor="#384E66"
+            android:textSize="@dimen/buttontext_size" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true" >
+        </EditText>
+        <TextView
+            android:id="@+id/pwd_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pwd_edit"
+            android:layout_toLeftOf="@+id/pwd_edit"
+            android:text="@string/user_pwd"
+            android:textColor="#384E66"
+            android:textSize="@dimen/buttontext_size" />
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_edit"
+            android:inputType="textPassword"
+            android:singleLine="true" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pwd_label"
+            android:layout_below="@+id/pwd_edit"
+            android:text="记住密码，下次自动登录"
+            android:textColor="#588F27" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auto_login"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttontext_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>
